@@ -1,0 +1,254 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:300,400,500,700");
+
+body {
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 10px;
+  margin-bottom:50px;
+  padding-top: 150px;
+  }
+
+p {
+  line-height: 20px;
+}
+
+.headers {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.sub-headders {
+font-family: 'Roboto', sans-serif;
+font-weight: 300;
+}
+
+a  {
+  text-decoration: none;
+  color: #F72585;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #7209B7
+}
+
+
+img {
+  border-radius: 50%;
+  border: 5px solid #B5179E;
+  border-width: 2px;
+  position: absolute;
+  right: 10%;
+  top: 100px;
+}
+
+.intro {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#top-banner {
+    background: #480CA8;
+    height: auto;
+    padding-top: 150px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+#title {
+  margin-bottom:0px;
+}
+
+.cards-container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+
+
+.card {
+  width: 80%;
+  color:  #ffffff;
+  background-color: #570bad5e;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 2px;
+  padding: 16px;
+  margin: 12px auto;
+}
+
+.card:hover {
+  text-decoration: none;
+  color: #fff;
+
+}
+
+ul {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #560BAD;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  display: inline-block;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(204, 141, 255),
+    0 0 82px rgb(204, 141, 255),
+    0 0 92px rgb(204, 141, 255),
+    0 0 102px rgb(204, 141, 255),
+    0 0 151px rgb(204, 141, 255);;
+}
+
+#footer {
+    clear: both;
+    position: relative;
+    background-color: #560BAD;
+    height: auto;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+button {
+  text-align: center;
+  position: center;
+	width: 150px;
+	height: 50px;
+}
+
+button:hover {
+	background-position: left;
+	color: white;
+	box-shadow: inset 0px 3px 5px rgba(255,255,255,1), 0px 0px 10px rgba(0,0,0,0.25);
+}
+
+a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+
+}
+a:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+a:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+a:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
