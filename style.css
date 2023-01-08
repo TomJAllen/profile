@@ -137,3 +137,28 @@ button:hover {
 	color: white;
 	box-shadow: inset 0px 3px 5px rgba(255,255,255,1), 0px 0px 10px rgba(0,0,0,0.25);
 }
+
+
+/* Projects work */
+.projects-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+
+}
+
+.projects-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: white;
+}
+
+.projects-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: white;
+  justify-content: center;
+
+}
