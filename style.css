@@ -12,10 +12,10 @@ body {
   }
 
 
-a  {
+/* a  {
   text-decoration: none;
   color: #F72585;
-}
+} */
 
 a:hover {
   text-decoration: underline;
@@ -66,16 +66,13 @@ a:hover {
   box-sizing: border-box;
 }
 
-#footer {
-
-    background-color: #272343;
-    height: auto;
-    text-align: center;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    flex-shrink: 0;
-    padding: 20px;
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  color: #560BAD;
+  padding: 20px;
 }
 
 
@@ -111,7 +108,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #560BAD;
+  /* background-color: #560BAD; */
 }
 
 li {
