@@ -1,28 +1,42 @@
 /*-------fonts--------*/
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:300,400,500,700");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500;1,700&display=swap');
 
-/*-------componenets--------*/
+/*-------Basic Rules--------*/
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
 
 body {
   overscroll-behavior: none;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   color: #ffffff;
-  margin: 0;
   }
 
+h1{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 90px;
+  color: #ffffff;
+}
+
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: black;
+  align-self: center;
+}
 
 a:hover {
   text-decoration: underline;
   color: #7209B7
 }
 
-#profile-picture{
-  border-radius: 50%;
-  max-width: 200px;
-  clip-path: circle();
-}
-
+/*-------Page Layout--------*/
 .hero {
   background: #2c3e50;
   height: 90vh;
@@ -37,11 +51,32 @@ a:hover {
   color: #272343;
 }
 
+.global-container {
+  width: 100vw;
+}
 
-#footer {
-    background-color: #272343;
-    height: 100px;
-    text-align: right;
+.container-hero {
+  width: 100vw;
+  color: #272343;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 0px;
+}
+
+.container-content {
+  width: 80vw;
+  color: #272343;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 0px;
+}
+
+.container-quote {
+  width: 40vw;
+  color: #272343;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 0px;
 }
 
 .projects-container {
@@ -52,12 +87,11 @@ a:hover {
   gap: 5px;
 }
 
-.project{
+.project {
   background-color: #2c3e50;
   color: white;
   padding: 10px;
   height: 300px;
-
 }
 
 .cards-container {
@@ -68,9 +102,9 @@ a:hover {
 
 .card {
   width: 80%;
-  color:  #ffffff;
+  color: #ffffff;
   background-color: #570bad5e;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   padding: 16px;
   margin: 12px auto;
@@ -79,53 +113,75 @@ a:hover {
 .card:hover {
   text-decoration: none;
   color: #fff;
-
 }
 
-ul {
-  list-style-type: none;
-  display: inline-block;
-  margin: 0;
+/*-------Navbar--------*/
+nav {
+  background-color: white;
+  height: 7em;
+  width: 100vw;
   padding: 0;
-  overflow: hidden;
-  background-color: #560BAD;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-li {
-  display: inline-block;
+nav h2{
+  margin-left: 3em;
 }
 
-li a {
-  display: inline-block;
-  padding: 16px;
+nav ul {
+  margin-right:3em;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li{
+  padding: 1.5em;
+  list-style: none;
+  font-weight: 500;
+}
+
+nav a {
+  box-shadow: inset 0 0 0 0 #000000;
+  color: #000000;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   text-decoration: none;
 }
 
+nav a:hover {
+  box-shadow: inset 100px 0 0 0 #000000;
+  color: white;
+  text-decoration: none;
+}
 
-
-
-nav {
-  background-color: white;
-  color: #2c3e50;
-  display: flex;
-
+/*-------Footer--------*/
+#footer {
+  background-color: #272343;
   height: 100px;
-  justify-content: space-between;
-  position: absolute;
-  top: 0;
-  width: 100vw;
+  text-align: right;
 }
 
-nav ul{
-  background-color: white;
-  color: #2c3e50;
+/*-------Other componenets--------*/
+
+#profile-picture{
+  border-radius: 50%;
+  max-width: 200px;
+  clip-path: circle();
 }
 
-nav li {
-  background-color: white;
-  color: #2c3e50;
+.cv-download-img{
+  background-image: url("Tom\ Allen\ CV.pdf");
+  background-color: #560BAD;
+  height: 250px;
+  filter: blur(1px);
 }
-nav a{
-  background-color: white;
-  color: #2c3e50;
+
+.quotee {
+  font-weight: bold;
 }
