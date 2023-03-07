@@ -5,8 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tom Allen - About Me</title>
+  <script src="../main.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap" rel="stylesheet">
@@ -14,9 +15,15 @@
 </head>
 
 <body>
+
+  <main-nav></main-nav>
+
   <div class="hero">
+    <img id="profile-picture" src="/images/Profile pic.png" alt="tomallenprofile">
     <h1 id=title>Hi there! I'm Tom</h1>
-    <a href="/about_me.html">click here to find out more about me</a>
+    <p>I'm an adventurous full stack developer with a background in biotechnological sciences, data protection and a
+      passion
+      for using technology to solve complex problems.</p>
   </div>
 
   <div class="fwh-slide">
@@ -55,57 +62,34 @@
     </div>
   </div>
 
-  <div class="fwh-slide fwh-slide--bg-green">
-    <div class="projects-container">
-      <div class="projects-left">
-        <div class=card>
-          <h3>Flexbox</h3>
-          <p>A Ruby on Rails Progressive Web Application which helps people make their perfect workout.
 
-          FlexBox suits all fitness users from beginner gym goers to professional athelets. It provides strucutre to create a
-          workout from our extensive database of exercises, save favourite workouts and see a workout history. The simple format
-          of the app allows users to plan a well rounded warmup, workout or cooldown.
 
-          Built with an interactive workout feature that guides your through your specified workout, Spotify Integration and a
-          workout history - we have many more features planned!
-        </p>
-
-        </div>
-        <div class=card>
-
-        </div>
-
-      </div>
-      <div class="projects-right">
-        <div class=card>
-
-        </div>
-
-      </div>
+  <div class="global-container">
+    <div class="container-content">
+      <h2>
+        Let's Connect
+      </h2>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/thomasallen91/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:thomasjamesallen91@gmail.com" target="_blank">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
+      <p>
+        Please feel free to reach out.
+        I am open to chatting about work or side projects opportunities, sharing my feedback or input, and really anything... As
+        always, I’ll my best to answer you in a timely fashion. Cheers.
+      </p>
     </div>
-
   </div>
 
-  <div id="lets_connect">
-    <ul>
-      <li>
-        <a href="https://www.linkedin.com/in/thomasallen91/" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </li>
-      <li>
-        <a href="mailto:thomasjamesallen91@gmail.com" target="_blank">
-          <i class="fa-light fa-envelope"></i>
-        </a>
-      </li>
-    </ul>
-    <p>
-      Please feel free to reach out.
-      I am open to chatting about work or side projects opportunities, sharing my feedback or input, and really anything... As
-      always, I’ll my best to answer you in a timely fashion. Cheers.
-    </p>
-
-  </div>
+  <main-footer></main-footer>
 
 </body>
 </html>
