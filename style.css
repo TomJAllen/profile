@@ -20,7 +20,7 @@ h1{
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-size: 90px;
-  color: #ffffff;
+  color: #222222;
 }
 
 h2 {
@@ -60,30 +60,18 @@ li {
 
 
 /*-------Page Layout--------*/
-.hero {
-  background: #2c3e50;
-  height: 90vh;
-  padding: 16px 16px;
-}
-
-.fwh-slide {
-  height: 100vh;
-  background: #E3F6F5;
-  box-sizing: border-box;
-  padding-top: 24px;
-  color: #272343;
-}
 
 .global-container {
   width: 100vw;
 }
 
 .container-hero {
-  width: 100vw;
+  display: flex;
+  flex-direction: row;
   color: #272343;
   margin: 0 auto;
   text-align: center;
-  padding: 100px 0px;
+  padding: 3em 0em;
 }
 
 .container-content {
@@ -192,17 +180,62 @@ nav ul a:hover {
 
 /*-------Footer--------*/
 #footer {
-  background-color: #272343;
-  height: 100px;
-  text-align: right;
+  background-color: #ffffff;
+  height: 9em;
+  width: 100vw;
+  padding: 0;
+  display: flex;
+  justify-content: end;
+}
+
+#footer-name{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  color: #969696;
+  margin-right: 3em;
+  align-self: center;
+  text-decoration: none;
+}
+
+
+footer ul {
+  margin-right: 3em;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer li {
+  padding: 1.5em;
+  list-style: none;
+  font-weight: 500;
+}
+
+footer ul a {
+  box-shadow: inset 0 0 0 0 #000000;
+  color: #eeeeee;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  text-decoration: none;
+}
+
+footer ul a:hover {
+  box-shadow: inset 100px 0 0 0 #000000;
+  color: #eeeeee;
+  text-decoration: none;
 }
 
 /*-------Other componenets--------*/
 
-#profile-picture{
-  border-radius: 50%;
-  max-width: 200px;
-  clip-path: circle();
+#profile-pic{
+  max-width: 50vw;
+  height: 80vh;
+  -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
 .cv-download-img{
@@ -218,4 +251,21 @@ nav ul a:hover {
 
 i {
   font-size: 3em;
+  box-shadow: inset 0 0 0 0 #000000;
+  color: #000000;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  text-decoration: none;}
+
+#linkedin:hover{
+  /* box-shadow: inset 100px 0 0 0 #000000; */
+  color: #0173b1;
+  text-decoration: none;
+}
+
+#email:hover {
+  /* box-shadow: inset 100px 0 0 0 #000000; */
+  color: #ce483c;
+  text-decoration: none;
 }

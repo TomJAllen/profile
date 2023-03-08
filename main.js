@@ -21,40 +21,11 @@ class Footer extends HTMLElement {
     this.innerHTML =
       `
         <div id=footer>
-    <ul>
-      <li>
-        <p>Tom Allen | Web Development
-        </p>
-      </li>
-      <li>
-        <a href="https://github.com/TomJAllen" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/thomasallen91/" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/thomasallen91/" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://dribbble.com/" target="_blank">
-          <i class="fab fa-dribbble"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-
-
+          <a id="footer-name" href="../index.html"><strong>Tom Allen |</strong> Product Management & Web Development
+          </a>
+        </div>
       `
-
   }
 }
-
 customElements.define('main-nav', Header);
 customElements.define('main-footer', Footer);
