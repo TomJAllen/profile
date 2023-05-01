@@ -4,10 +4,10 @@ class Header extends HTMLElement {
             <nav>
     <a href="/index.html"><h2>TOM ALLEN</h2></a>
     <ul>
-      <li><a href="../html/about_me.html">About Me</a></li>
-      <li><a href="../index.html">Projects</a></li>
-      <li><a href="../html/cv.html">CV</a></li>
-      <li><a href="../html/contact_me.html">Contact Me</a></li>
+      <li><a href="about_me.html">About Me</a></li>
+      <li><a href="index.html">Projects</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="contact_me.html">Contact Me</a></li>
     </ul>
   </nav>
         `
