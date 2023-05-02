@@ -217,12 +217,8 @@ nav ul a:hover {
   position: absolute;
   right: 0;
   top: 0;
+  font-size: 1em;
 
-}
-
-#mobile-nav a:hover {
-  background-color: #ddd;
-  color: black;
 }
 
 .active {
@@ -236,7 +232,7 @@ nav ul a:hover {
 }
 
 @media only screen and (min-width: 800px) {
-  #mobile-header{
+  #mobile-nav{
     display: none;
   }
 }

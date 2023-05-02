@@ -23,7 +23,7 @@ class MobileHeader extends HTMLElement {
 
           <a href="index.html"><h2>TOM ALLEN</h2></a>
 
-          <div id="myLinks">
+          <div id="my-links">
             <a href="about_me.html">About Me</a>
             <a href="index.html">Projects</a>
             <a href="cv.html">CV</a>
@@ -58,7 +58,7 @@ customElements.define('mobile-nav', MobileHeader);
 customElements.define('main-footer', Footer);
 
 function myFunction() {
-  var x = document.getElementById("myLinks");
+  var x = document.getElementById("my-links");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
