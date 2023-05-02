@@ -23,12 +23,6 @@ h1{
   color: #222222;
 }
 
-<<<<<<< HEAD
-/* a  {
-  text-decoration: none;
-  color: #F72585;
-} */
-=======
 h2 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
@@ -43,7 +37,6 @@ p {
   align-self: center;
   line-height: 1.5em;
 }
->>>>>>> 56f85074851f6f677fc839606078938b89f40704
 
 a:hover {
   text-decoration: underline;
@@ -97,22 +90,12 @@ li {
   padding: 100px 0px;
 }
 
-<<<<<<< HEAD
-footer {
-  height: 100px;
-  display: flex;
-  justify-content: flex-end;
-  align-content: center;
-  color: #560BAD;
-  padding: 20px;
-=======
 .projects-container {
   width: 80vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5px;
->>>>>>> 56f85074851f6f677fc839606078938b89f40704
 }
 
 .project {
@@ -149,14 +132,9 @@ nav {
   height: 7em;
   width: 100vw;
   padding: 0;
-<<<<<<< HEAD
-  overflow: hidden;
-  /* background-color: #560BAD; */
-=======
   display: flex;
   flex-direction: row;
   justify-content: space-between;
->>>>>>> 56f85074851f6f677fc839606078938b89f40704
 }
 
 
