@@ -30,7 +30,7 @@ class MobileHeader extends HTMLElement {
             <a href="contact_me.html">Contact Me</a>
           </div>
 
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <a href="javascript:void(0);" class="icon" onclick="changeNav()">
             <i class="fa fa-bars"></i>
           </a>
 
@@ -57,7 +57,7 @@ customElements.define('main-nav', Header);
 customElements.define('mobile-nav', MobileHeader);
 customElements.define('main-footer', Footer);
 
-function myFunction() {
+function changeNav() {
   var x = document.getElementById("my-links");
   if (x.style.display === "block") {
     x.style.display = "none";
