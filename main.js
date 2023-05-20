@@ -6,7 +6,7 @@ class Header extends HTMLElement {
           <a href="index.html"><h2>TOM ALLEN</h2></a>
           <ul>
             <li><a href="about_me.html">About Me</a></li>
-            <li><a href="index.html">Projects</a></li>
+            <li><a href="index.html#projects-overview">Projects</a></li>
             <li><a href="cv.html">CV</a></li>
             <li><a href="contact_me.html">Contact Me</a></li>
           </ul>
@@ -25,7 +25,7 @@ class MobileHeader extends HTMLElement {
 
           <div id="my-links">
             <a href="about_me.html">About Me</a>
-            <a href="index.html">Projects</a>
+            <a href="index.html#projects-overview">Projects</a>
             <a href="cv.html">CV</a>
             <a href="contact_me.html">Contact Me</a>
           </div>
