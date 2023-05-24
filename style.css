@@ -319,9 +319,8 @@ nav ul a:hover {
 }
 
 .game-img{
-  max-width: 100%;
-  margin: 0 auto;
-  height: 100px;
+  width: 100%;
+  margin: auto;
 }
 
 .cv-download-img{
