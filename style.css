@@ -65,7 +65,15 @@ li {
   font-weight: 500;
 }
 
+.game ul {
+  display: block;
+}
 
+.game li {
+
+  padding: 0 5vw;
+
+}
 
 /*-------Page Layout--------*/
 
@@ -107,6 +115,20 @@ li {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
+  .cards-container {
+    width: 80vw;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+
+  .game {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -121,6 +143,32 @@ li {
   .container-quote {
     width: 90vw;
   }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .game {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+.games-container {
+  width: 80vw;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.game-title{
+  text-align: center;
+  padding: 2vh 0px;
+
+
 }
 
 .project {
@@ -154,24 +202,10 @@ li {
 
 
 @media screen and (min-width:800px) {
-  .cards-container {
-    width: 80vw;
-    max-width: 1000px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
-  }
+
 }
 
-@media only screen and (max-width: 800px) {
-  .cards-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 5px;
-    padding: 5px;
-  }
-}
+
 
 .card {
   padding: 10px;
