@@ -344,12 +344,13 @@ nav ul a:hover {
 /*-------Other componenets--------*/
 
 #profile-pic{
-  max-width: 100%;
+  max-width: 33vw;
   column-span: 2;
   margin: 0 auto;
   -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
+    float: right;
 }
 
 .game-img{
