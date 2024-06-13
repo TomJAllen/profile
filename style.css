@@ -172,20 +172,39 @@ li {
 }
 
 .project {
-  /* background-color: #2c3e50; */
+  background-color: #2c3e50;
   padding: 10px;
   height: 300px;
   text-decoration: none;
-  position: relative;
-
+  /* position: relative; */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.project-img{
-  width: 100%;
+/* .project-img{
+  width: auto;
+  height: auto;
+  max-width: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
-  text-align: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+} */
+
+#project-koko {
+  background-image: url(images/KOKO\ Portfolio\ Cover\ Image\ Simple.jpg);
+}
+
+#project-tssc {
+  background-image: url(images/TSSC\ Cover\ Image\ HQ.jpg);
+}
+
+#project-sfyi {
+  background-image: url(images/SFYI\ Portfolio\ Cover\ Image.jpg);
+}
+
+#project-nine {
+  background-image: url(images/9ine\ Portfolio\ Cover\ Image\ simple.jpg);
 }
 
 .project-details{
@@ -397,4 +416,166 @@ i {
   /* box-shadow: inset 100px 0 0 0 #000000; */
   color: #ce483c;
   text-decoration: none;
+}
+
+
+/* Skills bars */
+
+.skills-bar {
+  padding: 25px 30px;
+}
+
+.skills-bar .bar {
+  margin: 25px 0;
+}
+
+.skills-bar .bar .info span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 8px;
+  color: #f0f0e6;
+}
+
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 550px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+  position: absolute;
+  background: #eede05;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line .html {
+  width: 80%;
+}
+
+.progress-line .css {
+  width: 70%;
+}
+
+.progress-line .bootstrap {
+  width: 50%;
+}
+
+.progress-line .python {
+  width: 65%;
+}
+
+.progress-line .javascript {
+  width: 30%;
+}
+
+.progress-line .c {
+  width: 50%;
+}
+
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -12px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #f0f0f0;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #07374a;
+  font-size: 12px;
+  font-weight: 700;
+  background: #f0f0f0;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+.progress-line .html::after {
+  content: "80%";
+}
+
+.progress-line .css::after {
+  content: "70%";
+}
+
+.progress-line .bootstrap::after {
+  content: "50%";
+}
+
+.progress-line .python::after {
+  content: "65%";
+}
+
+.progress-line .javascript::after {
+  content: "30%";
+}
+
+.progress-line .c::after {
+  content: "50%";
+}
+
+.navbar.solid {
+  background-color: #163744;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px rgb(7 55 74 / 20%);
+  z-index: 500;
+}
+
+.navbar.solid .navbar-brand {
+  display: inline-block;
+  color: #f0f0e6;
+  transition: color 1s ease 0s;
+}
+
+.navbar-brand {
+  display: none;
+  color: #f0f0e6;
+  font-weight: 400;
+}
+
+.work-arrow {
+  margin: 2rem 0;
+}
+
+.work-arrow a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #06f5cd;
+}
+
+.work-arrow-2 {
+  margin: 2rem 0;
+}
+
+.work-arrow-2 a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #25b79f;
+  display: none;
 }
