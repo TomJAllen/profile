@@ -442,7 +442,7 @@ i {
 .skills-bar .bar .progress-line {
   position: relative;
   height: 10px;
-  width: 550px;
+  width: 100%;
   background: #f0f0f0;
   border-radius: 10px;
   transform: scaleX(0);
@@ -490,7 +490,7 @@ i {
   width: 50%;
 }
 
-.bar .progress-line span::before {
+/* .bar .progress-line span::before {
   position: absolute;
   content: "";
   height: 0;
@@ -502,8 +502,8 @@ i {
   border-right-width: 0px;
   border-top-style: #f0f0f0;
   border-top-color: #f0f0f0;
-}
-
+} */
+/*
 .bar .progress-line span::after {
   position: absolute;
   right: 0;
@@ -514,9 +514,9 @@ i {
   background: #f0f0f0;
   padding: 1px 8px;
   border-radius: 3px;
-}
+} */
 
-.progress-line .html::after {
+/* .progress-line .html::after {
   content: "80%";
 }
 
@@ -538,7 +538,7 @@ i {
 
 .progress-line .c::after {
   content: "50%";
-}
+} */
 
 .navbar.solid {
   background-color: #163744;
