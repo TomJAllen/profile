@@ -436,7 +436,7 @@ i {
 
 .skills-bar .bar .info {
   margin-bottom: 8px;
-  color: #f0f0e6;
+  color: #000;
 }
 
 .skills-bar .bar .progress-line {
@@ -452,7 +452,7 @@ i {
 
 .bar .progress-line span {
   position: absolute;
-  background: #eede05;
+  background: #000;
   height: 100%;
   border-radius: 10px;
   transform: scaleX(0);
