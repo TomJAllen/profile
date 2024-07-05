@@ -167,9 +167,15 @@ li {
   background-color: var(--clr-purple-400);
 }
 
-.grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.container-skillset{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.skillset-intro{
+  width: 20%;
+  align-content: center;
 }
 
 @media screen and (min-width:800px) {
@@ -247,6 +253,13 @@ li {
   padding: 25px 42px 42px;
   border-radius: 48px;
   border: 3.5px solid var(--clr-black);
+}
+
+.project-info{
+  background-color: var(--clr-white);
+  border-radius: 0 0 48px 48px;
+  width: 100%;
+
 }
 
 
@@ -680,22 +693,38 @@ p {
 /* Card shuffle */
 
 .skill-info{
-  width: 70%;
+  /* width: 70%; */
 }
-/* .button {
-  position: absolute;
-} */
+.button {
+  align-self: center;
+  border: 3px solid var(--clr-black);
+  border-radius: 48px;
+  background-color: var(--clr-white);
+  color: var(--clr-text);
+  padding: 16px 32px;
+  /* box-shadow:
+      0.3em 0.3em 0 0 var(--clr-black),
+      inset 0.3em 0.3em 0 0 var(--clr-black); */
+}
+
+.button:hover,
+.button:focus {
+  box-shadow:
+      0.3em 0.3em 0 0 var(--clr-black);
+  cursor: pointer;
+}
+
 
 .button--left {
-  left: 25%;
+  /* left: 25%;
   top: 50%;
-  transform: translateX(-200px);
+  transform: translateX(-200px); */
 }
 
 .button--right {
-  right: 25%;
+  /* right: 25%;
   top: 50%;
-  transform: translateX(300px);
+  transform: translateX(300px); */
 }
 
 .carousel {
@@ -709,16 +738,15 @@ p {
 }
 
 .item {
-  width: 300px;
+  top: 10%;
+
+  width: 20vw;
   border: 3px solid black;
   border-radius: 48px;
   background: #dadada;
-  /* float: left; */
   list-style: none;
   margin-right: 20px;
   position: absolute;
-  top: 0;
-  left: 0;
   -webkit-transform-style: preserve-3d;
   transition: all .5s ease;
 }
