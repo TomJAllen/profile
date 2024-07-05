@@ -3,52 +3,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500;1,700&display=swap');
 
 /*-------Basic Rules--------*/
+
+:root {
+  /* colors */
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+  --clr-text: hsl(244, 44%, 14%);
+
+  --clr-red-400: hsl(0, 92%, 59%);
+  --clr-red-300: hsl(0, 93%, 73%);
+  --clr-red-200: hsl(0, 91%, 86%);
+  --clr-blue-400: hsl(220, 71%, 52%);
+  --clr-blue-300: hsl(220, 72%, 68%);
+  --clr-blue-200: hsl(220, 70%, 84%);
+  --clr-yellow-400: hsl(61, 100%, 62%);
+  --clr-yellow-300: hsl(60, 100%, 75%);
+  --clr-yellow-200: hsl(61, 100%, 87%);
+  --clr-green-400: hsl(164, 95%, 43%);
+  --clr-green-300: hsl(164, 72%, 62%);
+  --clr-green-200: hsl(164, 71%, 81%);
+  --clr-purple-400: hsl(252, 100%, 88%);
+  --clr-purple-300: hsl(252, 100%, 92%);
+  --clr-purple-200: hsl(252, 100%, 96%);
+
+  /* font families */
+  --ff-base: "Open Sans", sans-serif;
+  --ff-title: "Ubuntu", sans-serif;
+  --ff-accent: "Young Serif", serif;
+
+  /* font weights */
+  --fw-light: 300;
+  --fw-regular: 500;
+  --fw-bold: 600;
+  --fw-black: 700;
+
+  /* font sizes */
+  --fs-300: 1rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.375rem;
+  --fs-600: 1.75rem;
+  --fs-700: 2.25rem;
+  --fs-900: 3.125rem;
+}
+
 * {
   margin: 0;
   padding: 0;
-  line-height: 1;
 }
 
 body {
   overscroll-behavior: none;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  color: #222222;
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  color:var(--clr-text);
   }
 
 h1{
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 700;
-  font-size: 3em;
-  color: #222222;
+  font-family: var(--ff-title);
+  font-weight: var(--fw-black);
+  font-size: var(--fs-900);
+  color: var(--clr-text);
 }
 
 h2 {
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 500;
-  font-size: 2em;
-  color: black;
-  align-self: center;
+  font-family: var(--ff-title);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-600);
+  color: var(--clr-text);
 }
 
 h3 {
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 500;
-  font-size: 2.5em;
-  color: black;
-  align-self: center;
+  font-family: var(--ff-title);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-500);
+  color: var(--clr-text);
 }
 
 p {
-  font-size: 1.15em;
-  color: black;
-  align-self: center;
+  font-size: var(--fs-400);
+  color: var(--clr-text);
   line-height: 1.5em;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #7209B7
+  color: var(--clr-purple-400);
 }
 
 ul {
@@ -62,7 +101,7 @@ ul {
 li {
   padding: 1.5em;
   list-style: none;
-  font-weight: 500;
+  font-weight: var(--fw-regular);
 }
 
 .game ul {
@@ -79,8 +118,18 @@ li {
 /*-------Page Layout--------*/
 
 .global-container {
-  width: 100%;
+  width: 100vw;
 }
+
+.bg-purple{
+  background-color: var(--clr-purple-400);
+}
+
+.bg-blue {
+  background-color: var(--clr-blue-400);
+}
+
+
 
 .container-hero {
   margin: 0 auto;
@@ -89,18 +138,14 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+
 }
 
-#profile-pic{
-  position: absolute;
-  width: 500px;
-  height: auto;
-  bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
+.container-carouselle{
+  position: relative;
+  height: 90vh;
+
 }
 
 .container-content {
@@ -113,12 +158,18 @@ li {
 }
 
 .container-quote {
-  width: 40vw;
+  width: 100%;
   max-width: 700px;
   color: #272343;
   margin: 0 auto;
   text-align: center;
   padding: 100px 0px;
+  background-color: var(--clr-purple-400);
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 @media screen and (min-width:800px) {
@@ -188,13 +239,14 @@ li {
 
 .project {
   background-color: #2c3e50;
-  padding: 10px;
   height: 300px;
   text-decoration: none;
-  /* position: relative; */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 25px 42px 42px;
+  border-radius: 48px;
+  border: 3.5px solid var(--clr-black);
 }
 
 
@@ -223,11 +275,18 @@ li {
   bottom: 10px;
 }
 
-.card {
-  padding: 10px;
 
+#profile-pic {
+  position: absolute;
+  width: 500px;
+  height: auto;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
-
 
 /*-------Navbar--------*/
 nav {
@@ -238,6 +297,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-bottom: 4px solid black
 }
 
 
@@ -359,8 +419,6 @@ nav ul a:hover {
 
 /*-------Other componenets--------*/
 
-
-
 .game-img{
   width: 100%;
   margin: auto;
@@ -410,9 +468,18 @@ i {
 
 /* Skills bars */
 
-.skills-bar {
-  padding: 25px 30px;
+.skills{
+  padding: 30px;
 }
+
+.skill {
+  border: 3px solid black;
+  border-radius: 48px;
+  padding: 20px;
+  grid-row: span 2;
+}
+
+
 
 .skills-bar .bar {
   margin: 25px 0;
@@ -479,7 +546,7 @@ i {
   width: 50%;
 }
 
-/* .bar .progress-line span::before {
+.bar .progress-line span::before {
   position: absolute;
   content: "";
   height: 0;
@@ -491,8 +558,7 @@ i {
   border-right-width: 0px;
   border-top-style: #f0f0f0;
   border-top-color: #f0f0f0;
-} */
-/*
+}
 .bar .progress-line span::after {
   position: absolute;
   right: 0;
@@ -503,9 +569,8 @@ i {
   background: #f0f0f0;
   padding: 1px 8px;
   border-radius: 3px;
-} */
-
-/* .progress-line .html::after {
+}
+.progress-line .html::after {
   content: "80%";
 }
 
@@ -527,46 +592,6 @@ i {
 
 .progress-line .c::after {
   content: "50%";
-} */
-
-.navbar.solid {
-  background-color: #163744;
-  transition: background-color 1s ease 0s;
-  box-shadow: 0 0 4px rgb(7 55 74 / 20%);
-  z-index: 500;
-}
-
-.navbar.solid .navbar-brand {
-  display: inline-block;
-  color: #f0f0e6;
-  transition: color 1s ease 0s;
-}
-
-.navbar-brand {
-  display: none;
-  color: #f0f0e6;
-  font-weight: 400;
-}
-
-.work-arrow {
-  margin: 2rem 0;
-}
-
-.work-arrow a {
-  font-size: 1rem;
-  text-decoration: none;
-  color: #06f5cd;
-}
-
-.work-arrow-2 {
-  margin: 2rem 0;
-}
-
-.work-arrow-2 a {
-  font-size: 1rem;
-  text-decoration: none;
-  color: #25b79f;
-  display: none;
 }
 
 
@@ -574,7 +599,7 @@ i {
 
 
 
-
+/* Homepage hero */
 
 .title-section {
   text-align: left;
@@ -591,10 +616,11 @@ i {
 .title-info{
   width: 400px;
   z-index: 2;
-  background-color: #ffffff;
-  padding: 12px;
-  border: 1px solid #000;
+  background-color: var(--clr-white);
   align-self: end;
+  padding: 25px 42px 42px;
+  border-radius: 48px;
+  border: 3.5px solid var(--clr-black);
 }
 
 p {
@@ -606,6 +632,7 @@ p {
 .word {
   position: absolute;
   opacity: 0;
+
 }
 
 .text{
@@ -632,19 +659,120 @@ p {
   transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.wisteria {
-  color: #8e44ad;
+.red {
+  color: var(--clr-red-400);
 }
 
-.belize {
-  color: #2980b9;
+.purple {
+  color: var(--clr-purple-400);
 }
 
-.pomegranate {
-  color: #c0392b;
+.blue {
+  color: var(--clr-blue-400);
+}
+
+.green {
+  color: var(--clr-green-400);
 }
 
 
-.midnight {
-  color: #2c3e50;
+
+/* Card shuffle */
+
+.skill-info{
+  width: 70%;
+}
+/* .button {
+  position: absolute;
+} */
+
+.button--left {
+  left: 25%;
+  top: 50%;
+  transform: translateX(-200px);
+}
+
+.button--right {
+  right: 25%;
+  top: 50%;
+  transform: translateX(300px);
+}
+
+.carousel {
+  /* height: 50%;
+  padding: 0;
+  margin: 0; */
+  /* position: absolute; */
+  /* left: 50%;
+  top: 50%; */
+  /* transform: translate3d(-50%, -40%, 0); */
+}
+
+.item {
+  width: 300px;
+  border: 3px solid black;
+  border-radius: 48px;
+  background: #dadada;
+  /* float: left; */
+  list-style: none;
+  margin-right: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform-style: preserve-3d;
+  transition: all .5s ease;
+}
+
+.item--1 {
+  background-color: var(--clr-blue-300);
+}
+
+.item--2 {
+  background-color: var(--clr-green-300);
+}
+
+.item--3 {
+  background-color: var(--clr-red-300);
+  z-index: 3;
+}
+
+
+.item:last-child {
+  margin-right: 0;
+}
+
+
+[data-position='1'] {
+  transform: scale(0.75) translate3d(-120px, 0px, 0px);
+  z-index: 2;
+}
+
+[data-position='2'] {
+  transform: scale(1) translate3d(0px, 0px, 0px);
+  z-index: 3;
+}
+
+[data-position='3'] {
+  transform: scale(0.75) translate3d(120px, 0px, 0px);
+  z-index: 2;
+}
+
+
+
+@keyframes crossfade {
+  0% {
+    opacity: 1;
+  }
+
+  5% {
+    opacity: 0.7;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
