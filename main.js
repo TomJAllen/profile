@@ -96,13 +96,13 @@ function changeWord() {
 function animateLetterOut(cw, i) {
   setTimeout(function () {
     cw[i].className = 'letter out';
-  }, i * 80);
+  }, i * 40);
 }
 
 function animateLetterIn(nw, i) {
   setTimeout(function () {
     nw[i].className = 'letter in';
-  }, 340 + (i * 80));
+  }, 340 + (i *  40));
 }
 
 function splitLetters(word) {
@@ -122,6 +122,17 @@ function splitLetters(word) {
 
 changeWord();
 setInterval(changeWord, 4000);
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Skills Carouselle
@@ -203,70 +214,3 @@ function lazyLoad() {
   });
 
 }
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  const carousel = document.querySelector('.carousel');
-  const container = carousel.querySelector('.carousel-container');
-  const slides = carousel.querySelectorAll('.carousel-slide');
-  const prevButton = carousel.querySelector('.prev');
-  const nextButton = carousel.querySelector('.next');
-  const dots = carousel.querySelectorAll('.dot');
-
-  let currentIndex = 0;
-  const slideCount = slides.length;
-
-  function updateCarousel() {
-    container.style.transform = `translateX(-${currentIndex * 100}%)`;
-    dots.forEach((dot, index) => {
-      dot.setAttribute('aria-selected', index === currentIndex);
-    });
-    slides.forEach((slide, index) => {
-      slide.setAttribute('aria-hidden', index !== currentIndex);
-    });
-  }
-
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % slideCount;
-    updateCarousel();
-  }
-
-  function prevSlide() {
-    currentIndex = (currentIndex - 1 + slideCount) % slideCount;
-    updateCarousel();
-  }
-
-  nextButton.addEventListener('click', nextSlide);
-  prevButton.addEventListener('click', prevSlide);
-
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      currentIndex = index;
-      updateCarousel();
-    });
-  });
-
-  // Keyboard navigation
-  carousel.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowLeft') prevSlide();
-    if (e.key === 'ArrowRight') nextSlide();
-  });
-
-  // Touch events
-  let touchStartX = 0;
-  let touchEndX = 0;
-
-  carousel.addEventListener('touchstart', (e) => {
-    touchStartX = e.changedTouches[0].screenX;
-  });
-
-  carousel.addEventListener('touchend', (e) => {
-    touchEndX = e.changedTouches[0].screenX;
-    if (touchStartX - touchEndX > 50) nextSlide();
-    if (touchEndX - touchStartX > 50) prevSlide();
-  });
-
-  // Initial update
-  updateCarousel();
-});
