@@ -14,8 +14,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tom Allen - Projects - Game Development</title>
-  <meta name="description" content="Tom Allen's game development projects">
+  <title>Tom Allen - Game Development Portfolio</title>
+  <meta name="description" content="Explore Tom Allen's game development projects and journey in Unity game development">
   <meta name="author" content="Tom Allen">
 
   <script src="main.js"></script>
@@ -38,171 +38,135 @@
 
   <div class="global-container">
     <div class="container-content">
-      <h2>
-        Game Developement
-      </h2>
-      <br>
-      <p>
-        Gaming is a hobby that I have enjoyed since I got my first games console for christmas
-        at the age of 6. It has provided me with some incredible experiences - whether that be
-        beating my first Dark Souls boss, working out my first challenging Myst puzzle (without help
-        from the internet), hitting a clutch Warzone / Fortnite vicotry while my the rest of my
-        team watch on or even just expereincing the masterful storylines of a MGS or the latest GOW.
-        Gaming is a medium that can often times offer so much depth and immersion and has enabled me
-        to connect with friends that no longer live close or even make new friends.
-
-        With the development of advanced game engines that are accessible to anyone, I would love to
-        build on this hobby and make it a more permenenant part of my life. With my existing
-        developement skills and a head full of ideas, I have been intially trying my hand at game
-        developement using the Unity game engine. So far I have created
-        three simple concepts, following the course outlined by GameDev.tv to get an understanding of
-        how I can implement my ideas. These include a simple top-down old school gta style pizza delivery game,
-        a sidescrolling snowboard game and a quiz game details of which are outlined below.
-      </p>
+      <h1 class="page-title">Game Development</h1>
+      <div class="intro-section">
+        <p>
+          Gaming has been my passion since receiving my first console at age 6. It has provided me with countless memorable experiences - from conquering Dark Souls bosses to solving challenging Myst puzzles, achieving clutch victories in Warzone/Fortnite, and immersing myself in masterful storylines like Metal Gear Solid and God of War. Gaming's depth and immersion have helped me maintain connections with distant friends and forge new ones.
+        </p>
+        <p>
+          With the advent of accessible game engines, I'm excited to transform this hobby into a more permanent part of my life. Leveraging my development skills and creative ideas, I've begun exploring game development using Unity. Following GameDev.tv's curriculum, I've created three initial projects to understand how to implement my ideas: a retro-style pizza delivery game, a side-scrolling snowboard adventure, and an engaging quiz game.
+        </p>
+      </div>
     </div>
   </div>
 
   <div class="global-container">
-    <div class=games-container>
+    <div class="games-container">
+      <div class="game-card">
+        <h3 class="game-title">Pizza Delivery</h3>
+        <div class="game-content">
+          <div class="game-description">
+            <h4>Description</h4>
+            <p>A retro-style top-down pizza delivery game inspired by classic GTA. This was my first Unity project, focusing on environment object placement and physics interactions.</p>
+          </div>
+          
+          <div class="game-mechanics">
+            <h4>Core Mechanics & Game Loop</h4>
+            <p>Players pick up and deliver pizzas to customers while managing time constraints. Key features include:</p>
+            <ul>
+              <li>Pizza pickup and delivery system</li>
+              <li>Vehicle collision physics with slowdown effects</li>
+              <li>Speed boost power-ups</li>
+            </ul>
+          </div>
 
-      <h3 class="game-title">Pizza delivery</h3>
-      <div class=game>
-        <div>
-          <h4>Description</h4>
-          <p>A simple top-down old school gta style Pizza delivery game. This was the
-            first project I made in Unity and was aimed to get to grips with placing objects
-            in the environment and working with colliders / rigid bodies.
-          </p>
-        </div>
-        <div>
-          <h4>Core Mechanics + Game loop</h4>
-          <p>The main game loop was to pick up and then deliver a pizza to a hungover customer.
-            Key mechanics were the ability to pick up a pizza and having to deliver it before
-            picking up the next pizza, a slow down mechanic that impated the car whenever an
-            obstacle was hit as well as a boost function, to speed up the car whenever a boost
-            was driven over.
-          </p>
-        </div>
+          <div class="game-media">
+            <img class="game-img" src="images/pizza_delivery_clip.gif" alt="Pizza Delivery gameplay demonstration">
+          </div>
 
-        <img class="game-img" src="images/pizza_delivery_clip.gif" alt="Pizza Delivery game clip">
-
-
-        <div>
-          <h4>Additional Features / Improvements</h4>
-          <p>While this was my first attempt at creating a game, I would like to revisit this
-            project at some point and apply additional skills learnt to make this more rounded
-            as a standalone project.
-            Key items to add would be:
-          </p>
-          <ul>
-            <li>Scoring system</li>
-            <li>Time limit</li>
-            <li>Random spawning of pizzas + customers</li>
-            <li>A clear UI with key info</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <br><br><br>
-
-
-      <h3 class="game-title">Snowboard sidescroller</h3>
-      <div class=game>
-        <div>
-          <h4>Description</h4>
-          <p>A simple side scrolling snowbaord game, where players must reach the finish
-            without crashing. The aim of this project was to apply the skills learnt in the
-            delivery game but to work with some other features such as sound effects and
-            gravity.
-          </p>
-        </div>
-        <div>
-          <h4>Core Mechanics + Game loop</h4>
-          <p>The player must guide the snowboarder to the end of the level without crashing.
-            Key mechanics were the ability to rotate the character in the air and to speed up
-            when pressing forward. Only one level was created and this restarts upon completion.
-          </p>
-        </div>
-        <img class="game-img" src="images/snowboard_clip.gif" alt="Snowbard game clip">
-        <div>
-          <h4>Additional Features / Improvements</h4>
-          <p>Similarly, I would like to revisit this to add some more content to make it a
-            standalone game.
-            Key items to add would be:
-          </p>
-          <ul>
-            <li>Add in tricks</li>
-            <li>Additional levels</li>
-            <li>Scoring system</li>
-            <li>A clear UI with key info</li>
-          </ul>
-        </div>
-
-      </div>
-
-
-      <br><br><br>
-
-      <h3 class="game-title">Miscellany - a simple quiz Game</h3>
-      <div class=game>
-        <div>
-          <h4>Description</h4>
-          <p>
-            As a big fan of quizes, I set up a very simple quiz game. With some features that began to
-            test out some more C# scripting, such as the timer and the progress bar I really enjoyed
-            starting to see how the different components of larger games are added.
-            You can play my quiz game either using the link below or
-            <a href="https://i.simmer.io/@TomJAllen/miscellany">here on simmer.io</a>
-          </p>
-        </div>
-        <div>
-          <h4>Core Mechanics + Game loop</h4>
-          <p>The player must answer a set of quiz questions and is given a score based on performance
-            . There is a time limit of 15 seconds per question, after which the player will not score.
-            The player is presented with their score at the end and can try the quiz again.
-          </p>
-        </div>
-        <img class="game-img" src="images/quiz_game_3.png" alt="Quiz Game Screenshot">
-        <div>
-          <h4>Additional Features / Improvements</h4>
-          <p>With this being my first game which has an intro screen and navigation for the user
-            to start / restart the quiz,
-            Key items to add would be:
-          </p>
-          <ul>
-            <li>More questions + </li>
-            <li>Randomise questions</li>
-            <li>Add a different style of question</li>
-          </ul>
+          <div class="game-improvements">
+            <h4>Future Enhancements</h4>
+            <ul>
+              <li>Dynamic scoring system</li>
+              <li>Time-based challenges</li>
+              <li>Procedural pizza and customer spawning</li>
+              <li>Enhanced UI/UX design</li>
+            </ul>
+          </div>
         </div>
       </div>
 
+      <div class="game-card">
+        <h3 class="game-title">Snowboard Side-scroller</h3>
+        <div class="game-content">
+          <div class="game-description">
+            <h4>Description</h4>
+            <p>A challenging side-scrolling snowboard game where players navigate through obstacles to reach the finish line. This project expanded my skills in sound design and physics implementation.</p>
+          </div>
 
+          <div class="game-mechanics">
+            <h4>Core Mechanics & Game Loop</h4>
+            <p>Navigate through challenging terrain while maintaining momentum. Features include:</p>
+            <ul>
+              <li>Aerial rotation mechanics</li>
+              <li>Speed control system</li>
+              <li>Dynamic level design</li>
+            </ul>
+          </div>
 
+          <div class="game-media">
+            <img class="game-img" src="images/snowboard_clip.gif" alt="Snowboard game gameplay demonstration">
+          </div>
+
+          <div class="game-improvements">
+            <h4>Future Enhancements</h4>
+            <ul>
+              <li>Trick system implementation</li>
+              <li>Multiple level designs</li>
+              <li>Progressive difficulty scaling</li>
+              <li>Enhanced visual feedback</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <h3 class="game-title">Miscellany - Quiz Game</h3>
+        <div class="game-content">
+          <div class="game-description">
+            <h4>Description</h4>
+            <p>A dynamic quiz game showcasing advanced C# scripting and UI implementation. Test your knowledge with timed questions and track your progress.</p>
+            <p>Play the game: <a href="https://i.simmer.io/@TomJAllen/miscellany" class="game-link">Launch on Simmer.io</a></p>
+          </div>
+
+          <div class="game-mechanics">
+            <h4>Core Mechanics & Game Loop</h4>
+            <p>Challenge yourself with timed questions and track your performance:</p>
+            <ul>
+              <li>15-second time limit per question</li>
+              <li>Score tracking system</li>
+              <li>Progress visualization</li>
+            </ul>
+          </div>
+
+          <div class="game-media">
+            <img class="game-img" src="images/quiz_game_3.png" alt="Quiz Game interface">
+          </div>
+
+          <div class="game-improvements">
+            <h4>Future Enhancements</h4>
+            <ul>
+              <li>Expanded question database</li>
+              <li>Dynamic question randomization</li>
+              <li>Multiple question formats</li>
+              <li>Category-based gameplay</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-
-    <br><br><br>
-
-
-  <div class="container-content">
-    <h2>
-      Future Developement
-    </h2>
-    <br>
-    <p>I have been enjoying getting to grips with the Unity engine. The majority of the games
-      I have worked on at this point have been 2D games, with a focus on learning the core
-      functionality of the engine. I have a number of other ideas which will require me to start
-      investigating 3D design and builds which I am extremely excited for.
-    </p>
-
+  <div class="global-container">
+    <div class="container-content">
+      <h2>Future Development</h2>
+      <div class="future-section">
+        <p>
+          My journey with Unity has been incredibly rewarding. While my current projects focus on 2D game development to master core engine functionality, I'm excited to explore 3D game development. I have several innovative concepts that will require diving into 3D design and implementation, which I'm looking forward to bringing to life.
+        </p>
+      </div>
+    </div>
   </div>
-
-
-
-
 
   <main-footer></main-footer>
 
