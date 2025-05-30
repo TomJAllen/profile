@@ -897,7 +897,6 @@ i {
 
 /* Typography */
 h1, h2, h3, h4 {
-  font-family: 'Comfortaa', cursive;
   color: var(--primary-color);
   margin-bottom: 1rem;
 }
